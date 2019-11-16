@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoyStickActivity"
+    android:padding="16dp">
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystickView_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="64dp"
+        custom:JV_borderWidth="8dp"
+        custom:JV_backgroundColor="#009688"
+        custom:JV_borderColor="#00796B"
+        custom:JV_buttonColor="#FF6E40"/>
+
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystickView_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        custom:JV_borderWidth="8dp"
+        custom:JV_backgroundColor="#009688"
+        custom:JV_borderColor="#00796B"
+        custom:JV_buttonColor="#FF6E40"/>
+
+    <Switch
+        android:id="@+id/aux1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/joystickView_left"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="AUX 1" />
+
+    <Switch
+        android:id="@+id/aux2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/joystickView_left"
+        android:layout_alignBottom="@+id/aux1"
+        android:text="AUX 2" />
+
+    <Switch
+        android:id="@+id/aux3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/joystickView_right"
+        android:layout_alignBottom="@+id/aux1"
+        android:text="AUX 3" />
+
+    <Switch
+        android:id="@+id/aux4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/joystickView_right"
+        android:layout_alignBottom="@+id/aux1"
+        android:text="AUX 4" />
+
+    <Button
+        android:id="@+id/convertToHover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hovercraft Mode" />
+
+</RelativeLayout>

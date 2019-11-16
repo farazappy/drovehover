@@ -1,0 +1,29 @@
+Nano D2 ----> ESP D1
+
+Mega D2 ----> ESP D1
+
+ESP D4 -----> Input (Relay)
+
+Relay V+ -----> ESP 3.3v
+
+Relay GND ----> ESP GND
+
+Relay C -----> Battery +5v
+
+Relay NO -----> Nano/Mega Vin
+Relay NC ------> Nano/Mega Vin
+
+
+Servo A ----> ESP D8
+Servo B	----> ESP D6
+Servo C ----> ESP D7
+Servo D ----> ESP D5
+Servo E ----> Any Mega Pin, Tell me
+
+For Hovercraft ESC Connections --->
+
+ESC1 ---> Mega Pin 8
+ESC2 ---> Mega Pin 9
+
+ESC3 (Always full speed) ----> Mega Pin 10
+
